@@ -173,7 +173,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #f8f5f0;
 }
 
 body.is-preload *,
@@ -193,8 +193,8 @@ body,
 input,
 select,
 textarea {
-  color: #888;
-  font-family: "Lato", sans-serif;
+  color: #444;
+  font-family: "Times New Roman", sans-serif;
   font-size: 16pt;
   font-weight: 400;
   line-height: 1.75em;
@@ -213,14 +213,14 @@ a {
   transition:
     color 0.2s ease-in-out,
     border-color 0.2s ease-in-out;
-  border-bottom: solid 1px #e4e4e4;
-  color: inherit;
+  border-bottom: solid 1px #d4b996;
+  color: #b08450;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom-color: transparent;
-  color: #b8947c !important;
+  border-bottom-color: #8a6f47;
+  color: #8a6f47 !important;
 }
 
 strong,
@@ -284,6 +284,32 @@ h5 {
 h6 {
   font-size: 0.7em;
   line-height: 1.5em;
+}
+/* ---- TITRES PERSONNALISÉS ---- */
+h1 {
+  color: #b08450; /* beige doré */
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  color: #b08450;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0;
+}
+
+/* ---- SECTIONS ---- */
+section {
+  background-color: #fdfaf6; /* fond légèrement crème */
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
 }
 
 sub {
