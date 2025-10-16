@@ -16,72 +16,142 @@
     <style>
   /* ---- Styles globaux ---- */
   body {
-    background-color: #e6dbf5; /* Mauve clair */
-    font-family: "Times New Roman", Times, serif;
-    font-size: 12pt;
-    color: #222;
-    margin: 40px;
-    border: 8px double #b18be8; /* Bordure mauve autour de toute la page */
-    border-radius: 20px;
-    padding: 30px;
+    background-color: #f8f4ec; /* Beige clair apaisant */
+    font-family: "Playfair Display", serif; /* Police élégante */
+    font-size: 13pt;
+    color: #4a3c2a; 
+    margin: 0;
+    padding: 40px;
+    border: none !important; 
+    box-shadow: none !important; 
   }
 
   /* ---- Titres ---- */
   h1, h2, h3, h4 {
     text-align: center;
     font-weight: bold;
-    color: #5d3b91; /* Mauve un peu plus foncé pour contraste */
+    color: #a8906b; 
+    font-family: "Playfair Display", serif;
+  }
+
+  /* Titre principal */
+  h1.site-title {
+    font-size: 2.5em;
+    color: #4a3c2a; /* Marron plus profond */
+    margin-bottom: 0.1em;
+  }
+
+  /* Sous-titre */
+  h2.site-subtitle {
+    font-size: 1.5em;
+    color: #a8906b;
+    margin-top: -0.3em;
   }
 
   /* ---- Paragraphes ---- */
   p {
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   /* ---- Boutons ---- */
   .button.primary {
-    background-color: #7c4dc0;
+    background-color: #c9b89a; /* Beige soutenu */
     border: none;
     color: white;
     font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Playfair Display", serif;
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
   }
 
   .button.primary:hover {
-    background-color: #5e3a9a;
+    background-color: #a8906b;
   }
 
   /* ---- Liens et icônes ---- */
   a {
-    color: #5d3b91;
+    color: #4a3c2a;
     text-decoration: none;
+    border-bottom: 1px solid #d8c9b6;
+    transition: color 0.2s ease, border-color 0.2s ease;
   }
 
   a:hover {
-    color: #3b2565;
-    text-decoration: underline;
+    color: #a8906b;
+    border-bottom-color: #a8906b;
   }
 
   /* ---- Containers ---- */
   .container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: none !important;
+  }
+
+  /* ---- Navigation ---- */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    color: #4a3c2a;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #e9decf;
+    color: #a8906b;
   }
 
   /* ---- Pied de page ---- */
   #footer {
     text-align: center;
     font-size: 11pt;
-    color: #333;
-    background-color: #d8c5f0;
+    color: #6d5a43;
+    background-color: #efe7dd;
     border-radius: 0 0 12px 12px;
     padding: 10px;
+    border-top: 2px solid #e0d4c4;
   }
 
+  /* ---- Mise en valeur douce ---- */
+  em, strong {
+    color: #4a3c2a;
+    background-color: #efe7dd;
+    padding: 0 3px;
+    border-radius: 3px;
+  }
+  /* --- Correction : rendre le menu latéral fixe et animé au défilement --- */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20em; /* largeur du menu latéral */
+  height: 100%;
+  overflow-y: auto;
+  background-color: #f8f4ec; /* cohérent avec ton fond */
+  box-shadow: none; /* pour rester doux et sans bordure */
+}
+
+#wrapper {
+  margin-left: 20em; /* espace pour que le contenu ne passe pas sous le menu */
+}
+
 </style>
-  </head>
   <body class="is-preload">
     <!-- Header -->
     <section id="header">
@@ -91,7 +161,7 @@
         /></span>
         <h1 id="logo"><a href="#">Cecilia Ariane Nadembega</a></h1>
         <p>
-           Étudiante passionnée par le commerce international et les politiques économiques.<br />
+           Étudiante passionnée par le commerce international, le développement socio-économique de l'Afrique et les politiques économiques. <br />
           Bienvenue sur mon site ! <br />
         </p>
       </header>
